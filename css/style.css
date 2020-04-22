@@ -1,0 +1,79 @@
+*,*:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'San Francisco', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 375px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.statusbar {
+  background-size: contain;
+}
+
+.icons {
+  color: 	#0000ff;
+  text-align: left;
+  padding-right: 5%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.map {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px 165px 165px;
+  padding: 5px;
+  width: 375px;
+  line-height: 1.5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: thin solid #979797;
+  margin-top: 5px;
+}
+
+.h2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 16px;
+}
+
+.grid-item-1 {
+  font-weight: 600;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.grid-container-footer {
+  display: grid;
+  width: 375px;
+  grid-template-columns: 120px 120px 120px;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: #0000ff;
+  text-align: center;
+  color: #ffffff;
+  font-size: .75em;
+  font-weight: 600;
+}
