@@ -12,9 +12,7 @@ body {
 
 .container {
   box-sizing: border-box;
-  width: 375px;
-  margin: 10px;
-  padding: 10px;
+  width: 100%;
 }
 
 .statusbar {
@@ -23,15 +21,17 @@ body {
 
 .icons {
   color: 	#0000ff;
-  text-align: left;
   padding-right: 5%;
+  padding-left: 5%;
 }
 
-h1 {
+.header {
   text-align: center;
   font-weight: 700;
   padding: 10px;
   font-size: 20px;
+  width: 100%;
+
 }
 
 .map {
@@ -41,20 +41,20 @@ h1 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 80px 165px 165px;
-  padding: 5px;
-  width: 375px;
+  grid-template-columns: 55px 160px 150px;
+  width: 100%;
   line-height: 1.5;
   padding-top: 5px;
   padding-bottom: 5px;
-  border: thin solid #979797;
+  border-bottom: 5px solid #dbd9d9;
   margin-top: 5px;
+  padding-left: 15px;
+
 }
 
 .h2 {
   grid-column-start: 1;
   grid-column-end: 4;
-  font-size: 16px;
 }
 
 .grid-item-1 {
@@ -67,13 +67,21 @@ h1 {
 
 .grid-container-footer {
   display: grid;
-  width: 375px;
-  grid-template-columns: 120px 120px 120px;
-  padding: 5px;
+  width: 100%;
+  grid-template-columns: 110px 110px 110px;
   margin-top: 5px;
   background-color: #0000ff;
   text-align: center;
   color: #ffffff;
   font-size: .75em;
   font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@@media screen and (min-width:575px) {
+  div {
+    margin: 1%;
+    width: 48%;
+  }
 }
