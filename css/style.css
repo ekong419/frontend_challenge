@@ -19,20 +19,54 @@ body {
   background-size: contain;
 }
 
-.icons {
-  color: 	#0000ff;
+.icon {
+  color: 	#007AFF;
   padding-right: 5%;
   padding-left: 5%;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.chevron {
+  float: left;
+  display: grid;
+  grid-template-columns: 20px 50px;
+}
+
+.menu {
+  float: right;
+  padding-right: 10px;
+}
+
+.back {
+  font-weight: 400;
+  color: #007AFF;
+  font-size: 12px;
+  padding-top: 5%;
 }
 
 .header {
-  text-align: center;
-  font-weight: 700;
-  padding: 10px;
-  font-size: 20px;
   width: 100%;
-
+  padding: 10px;
+  padding-top: 20px;
+  border-top: 2px solid #dbd9d9;
+  display: grid;
+  grid-template-columns: 250px 80px;
 }
+
+.stop-name {
+  text-align: right;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.distance {
+  text-align: center;
+  font-weight: 300;
+  font-size: 10px;
+  padding-top: 8px;
+}
+
 
 .map {
   padding-bottom: 10px;
@@ -43,10 +77,10 @@ body {
   display: grid;
   grid-template-columns: 55px 160px 150px;
   width: 100%;
-  line-height: 1.5;
+  line-height: 1.7;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-bottom: 5px solid #dbd9d9;
+  border-bottom: 2px solid #dbd9d9;
   margin-top: 5px;
   padding-left: 15px;
 
@@ -55,10 +89,30 @@ body {
 .h2 {
   grid-column-start: 1;
   grid-column-end: 4;
+  font-weight: 600;
+  color: #007AFF;
+  text-transform: uppercase;
+
 }
 
 .grid-item-1 {
-  font-weight: 600;
+  padding-bottom: 5px;
+  font-style: italic;
+  background-color: #F8F8F8;
+}
+
+
+ul.arrival_time,
+ul.arrival_time ul {
+  margin: 0;
+
+}
+
+ul.arrival_time li {
+  list-style-type: none;
+  float: left;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 .content {
@@ -68,9 +122,9 @@ body {
 .grid-container-footer {
   display: grid;
   width: 100%;
-  grid-template-columns: 110px 110px 110px;
+  grid-template-columns: 120px 120px 120px;
   margin-top: 5px;
-  background-color: #0000ff;
+  background-color: #007AFF;
   text-align: center;
   color: #ffffff;
   font-size: .75em;
