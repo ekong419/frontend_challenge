@@ -14,65 +14,82 @@
         <div class="statusbar">
           <img src="images/iOS_status bar.png" alt="iOS status bar"/>
         </div>
-        <div class="icons">
-          <i class="fa fa-chevron-left w3-tiny" aria-hidden="true"></i>
+        <div class="icon">
+          <div class="chevron">
+            <i class="fa fa-chevron-left w3-tiny" aria-hidden="true"></i>
+            <div class="back">BusyBus</div>
+          </div>
+          <div class="menu">
+            <i class="fa fa-bars w3-tiny" aria-hidden="true"></i>
+          </div>
         </div>
       </nav>
       <section class="content">
         <div class="header">
-          <h1>Washington & State</h1>
+          <div class="stop-name">Washington & State</div>
+          <div class="distance">0.2 miles away</div>
         </div>
           <div class="map">
             <img src="images/busybusmap.png" alt="area map"/>
           </div>
           <div class="route direction">
             <div class="grid-container">
-              <div class="h2">Eastbound</div>
               <div class="grid-item-1">Line</div>
               <div class="grid-item-1">Destination</div>
-              <div class="grid-item-1">Frequency</div>
+              <div class="grid-item-1">Arrival Time (min)</div>
+              <div class="h2">Eastbound</div>
               <div class="grid-item">60</div>
               <div class="grid-item">Randolph/Harbor Dr</div>
-              <div class="grid-item">Every 20 minutes</div>
+              <ul class="arrival_time">
+                <li>2</li>
+                <li>22</li>
+                <li>42</li>
+              </ul>
               <div class="grid-item">124</div>
               <div class="grid-item">Navy Pier</div>
-              <div class="grid-item">Every 10 minutes</div>
+              <ul class="arrival_time">
+                <li>5</li>
+                <li>15</li>
+                <li>25</li>
+              </ul>
             </div>
             <div class="grid-container">
               <div class="h2">Northbound</div>
-              <div class="grid-item-1">Line</div>
-              <div class="grid-item-1">Destination</div>
-              <div class="grid-item-1">Frequency</div>
               <div class="grid-item">151</div>
               <div class="grid-item">Devon/Clark</div>
-              <div class="grid-item">Every 16 minutes</div>
+              <ul class="arrival_time">
+                <li>3</li>
+                <li>19</li>
+                <li>35</li>
+              </ul>
             </div>
             <div class="grid-container">
               <div class="h2">Southbound</div>
-                <div class="grid-item-1">Line</div>
-                <div class="grid-item-1">Destination</div>
-                <div class="grid-item-1">Frequency</div>
                 <div class="grid-item">J14</div>
                 <div class="grid-item">103rd/Stony Island</div>
-                <div class="grid-item">Every 15 minutes</div>
+                <ul class="arrival_time">
+                  <li>1</li>
+                  <li>16</li>
+                  <li>31</li>
+                </ul>
                 <div class="grid-item">124</div>
                 <div class="grid-item">Navy Pier</div>
-                <div class="grid-item">Every 10 minutes</div>
+                <ul class="arrival_time">
+                  <li>7</li>
+                  <li>17</li>
+                  <li>27</li>
+                </ul>
             </div>
             <div class="grid-container">
               <div class="h2">Reroute</div>
-                <div class="grid-item-1">Line</div>
-                <div class="grid-item-1">Destination</div>
-                <div class="grid-item-1">Frequency</div>
                 <div class="grid-item">6x</div>
                 <div class="grid-item">Jackson Park Express</div>
-                <div class="grid-item">N/A</div>
+                <ul class="arrival_time">
+                  <li>N/A</li>
+                </ul>
             </div>
             <div class="grid-container">
               <div class="h2">Out of Service</div>
-                <div class="grid-item-1">Line</div>
-                <div class="grid-item-1">Destination</div>
-                <div class="grid-item-1">Frequency</div>
                 <div class="grid-item">4</div>
                 <div class="grid-item">Cottage Grove</div>
                 <div class="grid-item">Resumes 12:10am</div>
@@ -83,11 +100,13 @@
                 <div class="grid-item">Streeterville/Taylor</div>
                 <div class="grid-item">Resumes 6:00am</div>
             </div>
-            <div class="grid-container-footer">
-              <div class="footer">Directions</div>
-              <div class="footer">Lines</div>
-              <div class="footer">Stations</div>
-            </div>
+            <footer>
+              <div class="grid-container-footer">
+                <div class="footer">Directions</div>
+                <div class="footer">Lines</div>
+                <div class="footer">Stations</div>
+              </div>
+            </footer>
           </div>
         </section>
       </section>
